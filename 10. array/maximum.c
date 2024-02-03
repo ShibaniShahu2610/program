@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
 int i,j,length,temp=0;
-//int a[5] ={5,4,6,2,4};
+
 printf("Enter the length of array:");
 scanf("%d",&length);
 int a[length];

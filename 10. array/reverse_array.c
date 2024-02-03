@@ -1,7 +1,7 @@
-#include<stdio.h>
+`#include<stdio.h>
 int main(){
-int i,j,length,temp=0;
-//int a[5] ={5,4,6,2,4};
+int i,j=0,length,temp=0;
+
 printf("Enter the length of array:");
 scanf("%d",&length);
 int a[length];
@@ -15,16 +15,11 @@ printf("Array elements:\n");
     for (int i = 0; i < length; i++){
         printf("%d ",a[i]);
     }
+printf("\n reversed array elements :\n");
 
-    temp=a[length-1];
-    for(i=length-1;i>0;i--){
-        a[i]=a[i-1];
-    }
-    a[0]=temp;
-    
-printf("Array elements after rotate to 1 shift towards right:\n");
-    for (int i = 0; i < length; i++){
-        printf("%d ",a[i]);
-    }
+for(i=length-1;i>=0;i--){
+    printf("Enter a [%d]= %d\n",j++,a[i]);
+}
 return 0;
 }
+
