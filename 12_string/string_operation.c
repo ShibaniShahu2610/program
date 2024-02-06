@@ -1,22 +1,22 @@
+// strcpy and strncpy function 
+
 #include<stdio.h>
 #include<string.h>
 int main(){
 
-    char str1[6] = "hello";
-    char str2[6];
-    char str3[4];
-    char str4[2];
+    char str1[] = "hello world\n";
+    char str2[11];
+    char str3[5];
+ 
+
+    printf("str1 = %s\n",str1);
 
     strcpy(str2, str1);
-    printf("%s\n",str2);
-    printf("%s\n",str1);
-    strncpy(str3,str1,4);
-    //str3[sizeof(str3) - 1] = '\0';
-    printf("%s\n",str3);
+    printf("str2 = %s\n",str2);
 
-   /* strncpy(str4,str1,sizeof(str4) -1);
-    str3[sizeof(str4) - 1] = '\0';
-    printf("%s\n",str4);*/
+    printf("str1 = %s\n",str1);
+    strcpy(str3,str1);
+    printf("str3 = %s\n",str3);
 
 return 0;
 }
