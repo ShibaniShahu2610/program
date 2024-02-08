@@ -19,7 +19,7 @@ printf("Array elements:\n");
     }
 
 for(i=0;i<length;i++){
-    if(a[i]%==0){
+    if((a[i]%) == 0){
         aeven[]=a[i];
     }
     else{

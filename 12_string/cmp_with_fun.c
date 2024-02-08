@@ -1,9 +1,10 @@
 #include <stdio.h>
+#define M 10
 #define N 10
 
 // Function to compare two strings
 int compareStrings(char *str1, char *str2) {
-    for (int i = 0; str1[i] != '\0' && str2[i] != '\0'; i++) {
+    for (int i = 0; i == M && i == N; i++) {
         if (str1[i] == str2[i])
             continue;
         else if (str1[i] == '\0' && str2[i] == '\0')
@@ -13,11 +14,11 @@ int compareStrings(char *str1, char *str2) {
         else 
             return 1;
     }
-    return 0;
+    // return 0;
 }
 
 int main() {
-    char str1[N]; 
+    char str1[M]; 
     char str2[N];
 
     printf("Enter a string for str1:");
