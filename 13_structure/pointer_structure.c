@@ -1,4 +1,5 @@
 // Program to access the structure member using structure pointer and the dot operator
+
 #include<stdio.h>
 struct employee
 {
