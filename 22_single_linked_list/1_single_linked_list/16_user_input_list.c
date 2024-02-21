@@ -1,3 +1,6 @@
+
+/* CODE TO PRINT THE NODE VALUE BY TAKING THE USER INPUT DATA */
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -63,7 +66,7 @@ void insert_node(node_t *list)
 int main()
 {
     node_t *list = NULL;
-    list = insert_node(list); 
+    insert_node(list); 
     
     return 0;
 }

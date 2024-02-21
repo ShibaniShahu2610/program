@@ -1,3 +1,6 @@
+
+/* CODE TO SORT THE LIST IN ASCENDING ORDER USING WHILE LOOP */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,10 +14,15 @@ typedef struct node {
 void sort(struct node *head)
 {
     int temp;
-    struct node *p, *q;
-    for(p = head; p != NULL; p = p->link)
+    struct node *p ,*q;
+
+    p = head;                                                                       
+
+    while (p != NULL)
     {
-        for(q = p->link; q != NULL; q = q->link)
+        q = p->link;
+
+        while(q != NULL)
         {
             if(p->data > q->data)
             {
@@ -22,7 +30,9 @@ void sort(struct node *head)
                 p->data = q->data;
                 q->data = temp; 
             }
+            q = q->link;
         }
+        p = p->link;
     }
     
     printf("---------sorted list-----------\n");
