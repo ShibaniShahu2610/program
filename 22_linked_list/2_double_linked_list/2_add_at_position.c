@@ -1,3 +1,6 @@
+
+/* CODE TO ADD A NEW NODE AT POSITION GIVEN BY USER */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -18,9 +21,11 @@ struct node *add_last(struct node *head) {
     temp->data = data;
     temp->next = NULL;
 
-    if (head == NULL) {
+    if (head == NULL) 
+    {
         head = temp;
-    } else {
+    } 
+    else {
         struct node *ptr = head;
         while (ptr->next != NULL) {
             ptr = ptr->next;
