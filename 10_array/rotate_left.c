@@ -23,7 +23,7 @@ printf("Array elements:\n");
     }
     a[length-1]=temp;
     
-printf("Array elements after rotate to 1 shift towards right:\n");
+printf("Array elements after rotate to 1 shift towards left:\n");
     for (int i = 0; i < length; i++){
         printf("%d ",a[i]);
     }

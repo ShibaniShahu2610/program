@@ -7,14 +7,17 @@ scanf("%d",&length);
 int a[length];
 
 printf("Enter the elements of array: \n");
+
 for(i=0; i<length; i++){
         printf("Enter a [%d]=",i);
         scanf("%d", &a[i]);
         }
+
 printf("Array elements:\n");
     for (int i = 0; i < length; i++){
         printf("%d ",a[i]);
     }
+    
 for (i = 0; i < length; i++) {
         for (j = i+1; j < length; j++) {
             if (a[i] > a[j]) {

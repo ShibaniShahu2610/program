@@ -4,8 +4,10 @@ int main(void){
     n=printf("Enter a number:");
     scanf("%d",&n);
 //int q=i;
-for(i=1;i<=n;i++){
-    if(n%i==0){
+for(i=1; i<=n; i++)
+{
+    if(n%i==0)
+    {
         count++;
     }
 }
