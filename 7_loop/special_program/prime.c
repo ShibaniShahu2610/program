@@ -1,3 +1,5 @@
+
+
 #include<stdio.h>
 int main(void){
     int n,i,count=0;

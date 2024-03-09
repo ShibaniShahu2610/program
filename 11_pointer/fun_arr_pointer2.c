@@ -18,7 +18,7 @@ int main(){
     int size= sizeof(ptr)/sizeof(ptr[0]);
     printf("size of an array : %d \n",size);
 
-    printf("Enter any number\n");
+    printf("Enter any number\n");     
     int number;
     scanf("%d", &number);
 

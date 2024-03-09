@@ -6,9 +6,9 @@ int main(){
     n=binary;
     while(n != 0){
         remainder = n % 10;
-        result=result+remainder*order;
-        order=order*2;
-        n=n/10;
+        result = result + remainder * order;
+        order = order*2;
+        n = n/10;
     }
     printf("value of result is %d",result);
     return 0;

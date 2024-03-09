@@ -13,7 +13,7 @@ int div(int x, int y) {
 
 int main() 
 {  int x, y, choice, result;
-  int (*ptr[4])(int, int) ={sum , sub,mult, div};
+  int (*ptr[4])(int, int) ={sum , sub, mult, div};
 
   printf("Enter two integer numbers: \n");
   scanf("%d%d", &x, &y);
